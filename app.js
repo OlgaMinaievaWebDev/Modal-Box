@@ -2,6 +2,7 @@ const modal = document.getElementById("modal");
 const closeModal = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consent-form");
 const modalText = document.getElementById("modal-text");
+const declineBtn = document.getElementById("decline");
 
 setTimeout(function () {
   modal.style.display = "inline";
@@ -9,6 +10,10 @@ setTimeout(function () {
 
 closeModal.addEventListener("click", function () {
   modal.style.display = "none";
+});
+
+declineBtn.addEventListener("mouseenter", function () {
+  document.getElementById("modal-choice-btns").classList.toggle("reverse");
 });
 
 consentForm.addEventListener("submit", function (e) {
@@ -35,5 +40,6 @@ consentForm.addEventListener("submit", function (e) {
         <img src="images/pirate.gif">
     </div>
   `;
+    closeModal.disabled = false;
   }, 3000);
 });
