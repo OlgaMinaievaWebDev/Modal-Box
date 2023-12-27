@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Modal Box</title>
   </head>
@@ -37,7 +40,7 @@
     </main>
     <div class="modal" id="modal">
       <div class="close-modal-btn-container">
-        <button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
+        <button class="modal-close-btn" id="modal-close-btn">X</button>
       </div>
       <div class="modal-inner" id="modal-inner">
         <h2>We ❤️ Your Data!</h2>
@@ -46,6 +49,14 @@
           track you, and we'll definitely spam you. To use this site, enter your
           name and email address and accept our ridiculous terms and conditions.
         </p>
+        <form action="#">
+         <input type="text" name="name" id="fullName" placeholder="Enter your full name" required>
+         <input type="email" name="email" id="email" placeholder="Enter your email" required>
+         <div class="modal-choice-btns" id="modal-choice-btns">
+          <button class="modal-btn" type="submit">Accept</button>
+          <button class="modal-btn" type="button">Decline</button>
+         </div>
+        </form>
       </div>
     </div>
     <script src="app.js"></script>
