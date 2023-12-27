@@ -155,6 +155,7 @@ input {
 
 .modal-display-name {
   color: fuchsia;
+  text-transform: uppercase;
 }
 
 .modal-text {
