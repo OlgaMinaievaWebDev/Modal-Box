@@ -50,12 +50,28 @@
           name and email address and accept our ridiculous terms and conditions.
         </p>
         <form action="#" id="consent-form">
-         <input type="text" name="name" id="fullName" placeholder="Enter your full name" required>
-         <input type="email" name="email" id="email" placeholder="Enter your email" required>
-         <div class="modal-choice-btns" id="modal-choice-btns">
-          <button class="modal-btn" type="submit">Accept</button>
-          <button class="modal-btn" type="button" id="decline">Decline</button>
-         </div>
+          <input
+            type="text"
+            name="name"
+            id="fullName"
+            placeholder="Enter your full name"
+            aria-label="Full name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            aria-label="email address"
+            required
+          />
+          <div class="modal-choice-btns" id="modal-choice-btns">
+            <button class="modal-btn" type="submit">Accept</button>
+            <button class="modal-btn" type="button" id="decline">
+              Decline
+            </button>
+          </div>
         </form>
       </div>
     </div>
